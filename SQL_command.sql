@@ -34,9 +34,9 @@
 
  9. Вывести пользователей которые были созданы 2021-03-26 00:00:00
 
-	select column1, column2 from table_name
+	select * from table_name
 
-	where condition1 = "2021-03-26" and condition2 = "00:00:00";
+	where condition1 = "2021-03-26 00:00:00";
 
  10. Вывести пользователей где в имени есть слово Анна
 
@@ -58,14 +58,14 @@
 
 	select * from table_name
 
-        where column1 like '%2021-07-12%' and column2 like  '&00:00:00%';
+        where column1 like '%2021-07-12% 00:00:00%';
 
 
  14. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и имеют пароль 1m313
 
 	select * from table_name
 
-        where column1 = "2021-07-12" and column2 = "00:00:00" and column3 = "1m313";
+        where column1 = "2021-07-12 00:00:00" and column2 = "1m313";
 
 	
 
@@ -73,14 +73,14 @@
 
 	select * from table_name
 
-        where column1 = "2021-07-12" and column2 = "00:00:00" and column like '%Andrey%';
+        where column1 = "2021-07-12 00:00:00" and column2 like '%Andrey%';
 
 
  16. Вывести пользователей которые были созданы 2021-07-12 00:00:00 и у которых в имени есть цифра 8
 
 	 select * from table_name
 
-        where column1 = "2021-07-12" and column2 = "00:00:00" and column like '%8%';
+        where column1 = "2021-07-12 00:00:00" and column2 like '%8%';
 
 
 
@@ -151,11 +151,11 @@
 
  28. Вывести минимальный id 
 
-	select min(column) from table_name
+	select min(column) from table_name;
 
- 29. Вывести максимальный.
+ 29. Вывести максимальный id
 
-	select max(column) from table_name
+	select max(column) from table_name;
 
 
  30. Вывести количество пользователей
